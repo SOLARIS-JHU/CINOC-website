@@ -26,12 +26,10 @@
 
   <title>CINOC - Scalable PDE Control</title>
   
-  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <link rel="icon" type="image/png" href="static/images/lab-logo.png">
   
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  <!-- <link rel="stylesheet" href="static/css/fontawesome.all.min.css"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -196,7 +194,7 @@
         
         <div class="content has-text-justified">
           <p>
-            We evaluate the multi-agent operator learning framework across three diverse PDE control modalities: <strong>Trajectory Tracking</strong> (managing dissipation in linear/nonlinear systems), <strong>Stabilization</strong> (suppressing spatiotemporal chaos), and <strong>Density Transport</strong> (constructive pattern formation via flow manipulation). We report below the results for <strong>Trajectory Tracking</strong> with Actuator Constraints in a 2D Heat equation and <strong>Stabilization</strong> of the chaotic 2d Kuramoto-Sivashinsky equation.
+            We evaluate the multi-agent operator learning framework across three diverse PDE control modalities: <strong>Trajectory Tracking</strong> (managing dissipation in linear/nonlinear systems), <strong>Stabilization</strong> (suppressing spatiotemporal chaos), and <strong>Density Transport</strong> (constructive pattern formation via flow manipulation). We report below the results for <strong>Trajectory Tracking</strong> with Actuator Constraints in a 2D Heat equation and <strong>Stabilization</strong> of the chaotic 1d Kuramoto-Sivashinsky equation.
           </p>
         </div>
 
@@ -204,7 +202,7 @@
 
 
         <div class="content has-text-justified" style="margin-top: 30px;">
-          <img src="static/images/figure4_heat2d.png" alt="Control under Actuator Constraints" style="width: 100%; border-radius: 8px; margin-bottom: 10px;" />
+          <img src="static/images/heat2d_paper_animation.gif" alt="Control under Actuator Constraints" style="width: 100%; border-radius: 8px; margin-bottom: 10px;" />
           <p>
             <strong>Trajectory Tracking with Constraints:</strong> Controlled evolution of a 2D Heat field where mobile agents regulate the 2D temperature field toward reference contours while successfully navigating and avoiding static exclusion zones (orange circles).
           </p>
@@ -212,9 +210,9 @@
         
 
         <div class="content has-text-justified" style="margin-top: 50px;">
-          <img src="static/images/figure3_ks2d.png" alt="Stabilizing Spatiotemporal Chaos" style="width: 100%; border-radius: 8px; margin-bottom: 10px;" />
+          <img src="static/images/ks1d_L500_comparison.gif" alt="Stabilizing Spatiotemporal Chaos" style="width: 100%; border-radius: 8px; margin-bottom: 10px;" />
           <p>
-            <strong>Stabilizing Spatiotemporal Chaos:</strong> The policy successfully manages nonlinear amplification, driving the chaotic 2D Kuramoto-Sivashinsky system to a zero equilibrium state.
+            <strong>Stabilizing Spatiotemporal Chaos:</strong> The policy successfully manages nonlinear amplification, driving the chaotic 1D Kuramoto-Sivashinsky system to a zero equilibrium state.
           </p>
         </div>
 
